@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DevCodeController">
+   <top>
+      <ToolBar fx:id="toolBar" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <MenuButton mnemonicParsing="false" text="File">
+              <items>
+                <MenuItem fx:id="NewProyectItem" mnemonicParsing="false" onAction="#onNewProjectButtonPressed" text="New Project" />
+                <MenuItem fx:id="SaveItem" mnemonicParsing="false" onAction="#onSaveButtonPressed" text="Save" />
+                  <MenuItem fx:id="NewFile" mnemonicParsing="false" onAction="#onNewFileButtonPressed" text="New File" />
+                  <MenuItem fx:id="OpenFile" mnemonicParsing="false" onAction="#OpenFile" text="OpenFile" />
+              </items>
+            </MenuButton>
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <TextArea fx:id="textCode" prefHeight="413.0" prefWidth="616.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
